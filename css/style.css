@@ -1,3 +1,36 @@
-h1 {}
-
-<!::-webkit-search-decoration>
+            body {
+                background-color: lightgray;
+            }
+            
+            h1 {
+                color: rgb(201, 24, 24);
+                font-family: "Arial";
+                font-size: 24px;
+            }
+            
+            p {
+                font-size: 20px;
+                font-weight: bold;
+                color: blue;
+                opacity: 0.75;
+            }
+            
+            table {
+                text-align: left;
+                font-size: 20px;
+            }
+            
+            tbody {
+                font-size: 18px;
+                text-align: left;
+            }
+            
+            title {
+                text-align: center;
+            }
+            
+            img {
+                width: 300;
+                height: 400;
+            }
+            
