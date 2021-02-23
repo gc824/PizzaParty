@@ -1,41 +1,47 @@
+               * {
+               	margin: 0;
+               	padding: 0;
+               	box-sizing: border-box;
+               }
+
                body {
-                   background-image: url(../img/PizzaParty.jpg);
-                   height: 100%;
-                   background-position: center;
-                   background-repeat: no-repeat;
-                   background-size: cover;
-                   position: relative;
+               	background-image: url(../img/PizzaParty.jpg);
+               	height: 100%;
+               	background-position: center;
+               	background-repeat: no-repeat;
+               	background-size: cover;
+               	position: relative;
+               }
+
+               .navbar-brand {
+               	color: rgb(201, 24, 24);
+               	font-family: "Arial";
+               	font-size: 24px;
                }
 
                h1 {
-                   color: rgb(201, 24, 24);
-                   font-family: "Arial";
-                   font-size: 24px;
-               }
-
-               #topnav {
-                   color: black;
+               	color: rgb(201, 24, 24);
+               	font-family: "Arial";
+               	font-size: 2410px;
                }
 
                p {
-                   font-size: 20px;
-                   font-weight: bold;
-                   color: blue;
-                   opacity: 0.75;
+               	font-size: 20px;
+               	font-weight: bold;
+               	color: blue;
+               	opacity: 0.75;
                }
 
                table {
-                   text-align: left;
-                   font-size: 20px;
+               	text-align: left;
+               	font-size: 20px;
                }
 
                tbody {
-                   font-size: 18px;
-                   text-align: left;
+               	font-size: 18px;
+               	text-align: left;
                }
 
                title {
-                   text-align: center;
+               	text-align: center;
                }
-               
-           
