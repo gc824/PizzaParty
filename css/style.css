@@ -7,10 +7,23 @@
                 	position: relative;
                 }
 
+                .header-outer {
+                	display: flex;
+                	align-items: center;
+                	position: sticky;
+                	top: -50px;
+                	height: 120px;
+                }
+
+                .header-inner {
+                	height: 70px;
+                	position: sticky;
+                	top: 0;
+                }
+
                 h1 {
                 	color: rgb(201, 24, 24);
                 	font-family: "Arial";
-                	font-size: 2410px;
                 }
 
                 p {
