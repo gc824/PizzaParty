@@ -1,41 +1,48 @@
-               body {
-                   background-image: url(../img/PizzaParty.jpg);
-                   height: 100%;
-                   background-position: center;
-                   background-repeat: no-repeat;
-                   background-size: cover;
-                   position: relative;
-               }
+                body {
+                	background-image: url(../img/PizzaParty.jpg);
+                	height: 100%;
+                	background-position: center;
+                	background-repeat: no-repeat;
+                	background-size: cover;
+                	position: relative;
+                }
 
-               h1 {
-                   color: rgb(201, 24, 24);
-                   font-family: "Arial";
-                   font-size: 24px;
-               }
+                .header-outer {
+                	display: flex;
+                	align-items: center;
+                	position: sticky;
+                	top: -50px;
+                	height: 120px;
+                }
 
-               #topnav {
-                   color: black;
-               }
+                .header-inner {
+                	height: 70px;
+                	position: sticky;
+                	top: 0;
+                }
 
-               p {
-                   font-size: 20px;
-                   font-weight: bold;
-                   color: blue;
-                   opacity: 0.75;
-               }
+                h1 {
+                	color: rgb(201, 24, 24);
+                	font-family: "Arial";
+                }
 
-               table {
-                   text-align: left;
-                   font-size: 20px;
-               }
+                p {
+                	font-size: 20px;
+                	font-weight: bold;
+                	color: blue;
+                	opacity: 0.75;
+                }
 
-               tbody {
-                   font-size: 18px;
-                   text-align: left;
-               }
+                table {
+                	text-align: left;
+                	font-size: 20px;
+                }
 
-               title {
-                   text-align: center;
-               }
-               
-           
+                tbody {
+                	font-size: 18px;
+                	text-align: left;
+                }
+
+                title {
+                	text-align: center;
+                }
