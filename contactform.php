@@ -6,7 +6,7 @@ if(isset($_POST['submit'])) {
     $mailFrom= $_POST['mail'];
     $message= $_POST['message'];
 //need to change gmail address, internal gmail processing blocks php related forms for some reason
-    $mailTo = "rebecca.l.baia@gmail.com";
+    $mailTo = "gaganchhabra24@yahoo.com";
     $headers = "From: ".$mailFrom;
     $txt = "You have recieved an email from ".$name.".\n\n" .$message;
 
