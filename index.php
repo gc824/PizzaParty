@@ -1,15 +1,23 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>PizzaParty-Menu</title>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+	<title>PizzaParty</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="css/style.css" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
+
 <body>
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 		<div class="container-fluid">
-			<a class="navbar-brand" href="index.html">PizzaParty</a>
+			<a class="navbar-brand" href="index.php">PizzaParty</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
 				data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false"
 				aria-label="Toggle navigation">
@@ -17,13 +25,13 @@
 			</button>
 			<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
 				<li class="nav-item active">
-					<a class="nav-link" href="ourstory.html">Our Story</a>
+					<a class="nav-link" href="ourstory.php">Our Story</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="contactus.php">Connect with Us!</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="recipes.html">Recipes</a>
+					<a class="nav-link" href="recipes.php">Recipes</a>
 				</li>
 			</ul>
 			<div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
@@ -42,7 +50,18 @@
 			</div>
 		</div>
 	</nav>
-	<h1>HOT out of the Oven</h1>
+	<h1>Our Story</h1>
+	<p>The Pizza Party story is really the story about America, from Naples to New York City to Buffalo, NY. In 1938 at
+		the age of 12 and 15 Giovanni and Carlo Pardini left their home in Naples, Italy to achieve the American dream.
+		<br>
+	<p>After a short stay at Ellis Island. Their name was shortened to <i>"Pardi"</i>, they lived in New York City until
+		leaving for Buffalo in 1950. The brothers opened <em>"Pizzeria di Pardi"</em> on Grant street in Buffalo's west
+		side. In 1986 we expanded to 8 locations in western NY and Pizzeria di Pardi became <b>Pizza Party! </b> Today
+		we have three locations serving up the classic pizza & wings Buffalo is known for our original location as well
+		as our Hertel Avenue and UB locations.</p>
+
+	<h1>Menu</h1>
+	<h2>HOT out of the Oven</h2>
 	<table>
 		<thead>
 			<th>Fresh Baked Pizza</th>
@@ -56,7 +75,7 @@
 				<td>$18.00</td>
 			</tr>
 			<tr>
-				<td>Cheese with One Topping</<td>
+				<td>Cheese with One Topping</td>
 				<td>$14.00</td>
 				<td>$20.00</td>
 			</tr>
@@ -77,38 +96,39 @@
 		<p><b>Choice of Toppings:</b> Black Olives, Broccoli, Fresh Onions, Green Olives, Mushrooms, Italian Sausage,
 			Buffalo Chicken, Pepperoni, Ham.</p>
 	</div>
-
 	<hr>
 
 	<div>
-		<h1><b>Specialty Pizzas</b></h1>
+		<h3><b>Specialty Pizzas</b></h3>
 		<hr>
 
-		<h1><b>Flyers</b>$16.50</h1>
-		<p>Slices of pepperoni pizza are called flyers, because of the way they’re often tossed around like Frisbees
+		<h4><b>Flyers</b>$16.50</h4>
+		<p>Slices of pepperoni pizza are called flyers, because of the way they are often tossed around like Frisbees
 			with Fresh mozzarella and Fresh Basil.</p>
 		<hr>
 
-		<h1><b>Grandma's Pizza</b>$12.50</h1>
-		<P>Grandma pizza is a distinct pizza that originates from Long Island, New York. It is a thin, square pizza with
-			Cheese, Tomatoes, and Fresh Basil</P>
+		<h4><b>Grandma's Pizza</b>$12.50</h4>
+		<p>Grandma pizza is a distinct pizza that originates from Long Island, New York. It is a thin, square pizza with
+			Cheese, Tomatoes, and Fresh Basil</p>
 		<hr>
 
-		<h1><b>Gmoney</b>$14.00</h1>
+		<h4><b>Gmoney</b>$14.00</h4>
 		<p>Queens style pizza with Extra Cheese and side of Marinara sauce.</p>
 		<hr>
 
-		<h1><b>Becca</b>$25.00</h1>
+		<h4><b>Becca</b>$25.00</h4>
 		<p>I love when it's Hot Bread in the oven</p>
 		<hr>
 
-		<h1><b>Chris</b>$20.00</h1>
+		<h4><b>Chris</b>$20.00</h4>
 		<p>Pepperoni, Bacon & Peppers.</p>
 		<hr>
-	</div>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+
+		<h1>Recipe</h1>
+		
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
 			crossorigin="anonymous"></script>
 </body>
-
 </html>

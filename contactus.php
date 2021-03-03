@@ -47,7 +47,7 @@ ini_set('display_errors', 1);
             </div>
         </div>
     </nav>
-    <div id="form" name="form">
+    <div id="contact us form" name="form">
         <?php
         $fullname = '';
         $email = '';
