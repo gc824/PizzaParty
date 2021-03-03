@@ -61,7 +61,6 @@ ini_set('display_errors', 1);
 
 
         if (isset($_POST['submit-btn'])) {
-            var_dump($_POST);
 
             if (!empty(trim($_POST['fullName']))) {
                 $fullName = trim($_POST['fullName']);
