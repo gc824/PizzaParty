@@ -21,14 +21,17 @@ ini_set('display_errors', 1);
             </button>
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item active">
-                    <a class="nav-link" href="ourstory.html">Our Story</a>
+                    <a class="nav-link" href="ourstory.php">Our Story</a>
                 </li>
 
                 <li class="nav-item">
                     <a class="nav-link" href="contactus.php">Connect with Us!</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="recipes.html">Recipes</a>
+                    <a class="nav-link" href="recipes.php">Recipes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="menu.php">Menu</a>
                 </li>
             </ul>
 
@@ -49,32 +52,42 @@ ini_set('display_errors', 1);
     </nav>
     <div id="contact us form" name="form">
         <?php
-        $fullname = '';
+        $fullName = '';
         $email = '';
         $subject = '';
         $message = '';
         $mailFrom = '';
+        $errors = array();
 
-    if (isset($_Post['submit-btn'])) {
 
-         if (!empty(trim($_POST['name']))) {
-            $fullname = trim($_POST['name']);
-        } else {
-            echo "<p> Name cannot be blank</p>";
-        }
+        if (isset($_POST['submit-btn'])) {
+            var_dump($_POST);
 
-        if (!empty(trim($_POST['subject']))) {
-            $subject = trim($_POST['subject']);
-        } else {
-            echo "<p>Subject cannot be blank</p>";
-        }
+            if (!empty(trim($_POST['fullName']))) {
+                $fullName = trim($_POST['fullName']);
+            } else {
+                $errors['fullName'] = 'Enter your name!';
+            }
 
-        if (!empty(trim($_POST['message']))) {
-            $message = trim($_POST['message']);
-        } else {
-            echo "<p>Message cannot be blank</p>";
-        }
+            if (!empty(trim($_POST['subject']))) {
+                $subject = trim($_POST['subject']);
+            } else {
+                $errors['subject'] = "<p>Subject cannot be blank</p>";
+            }
 
+            if (!empty(trim($_POST['message']))) {
+                $message = trim($_POST['message']);
+            } else {
+                $errors['message'] = "<p>Message cannot be blank</p>";
+            }
+
+            if (!empty(trim($_POST['email']))) {
+                $email = trim($_POST['email']);
+            } else {
+                $errors['email'] = 'GIVE US YOUR EMAIL';
+            }
+
+            /* TODO
         if (isset($_POST['submit'])) {
             $fullname = $_POST['name'];
             $subject = $_POST['subject'];
@@ -82,20 +95,20 @@ ini_set('display_errors', 1);
             $message = $_POST['message'];
             $mailTo = "gaganchhabra24@yahoo.com";
             $headers = "From: " . $mailFrom;
-            $txt = "You have recieved an email from " . $fullname . ".\n\n" . $message;
+            $txt = "You have recieved an email from" . $fullname . ".\n\n" . $message;
             mail($mailTo, $subject, $txt, $headers);
             header("Location: contactus.php?mailsend");
+        } */
         }
-    }
         ?>
 
         <h1> Connect with Us! </h1></br>
-        <p>Send E-mail</p><br/>
+        <p>Send E-mail</p><br />
         <form class="contact-form" action="contactus.php" method="post">
-            <input type="text" name="full name" <?= ($fullname ? 'value="' . $fullname . '"' :  ''); ?> placeholder="Full Name"required><br/>
-            <input type="email" name="mail" <?= ($email ? 'value="' . $email . '"' : ''); ?> placeholder="Your Email" required><br/>
-            <input type="text" names="subject" <?=($subject ? 'value="' . $subject . '"' : ''); ?> placeholder="Subject" required></br/>
-            <textarea name="message" placeholder="Tell us about your experience! " required><?= ($message ? $message : ''); ?></textarea><br/>
+            <input type="text" name="fullName" <?= ($fullName ? 'value="' . $fullName . '"' :  ''); ?> placeholder="Full Name" required><span></span><br />
+            <input type="email" name="email" <?= ($email ? 'value="' . $email . '"' : ''); ?> placeholder="Your Email" required><br />
+            <input type="text" name="subject" <?= ($subject ? 'value="' . $subject . '"' : ''); ?> placeholder="Subject" required></br />
+            <textarea name="message" placeholder="Tell us about your experience! " required><?= ($message ? $message : ''); ?></textarea><br />
             <input type="submit" name="submit-btn"></br>
         </form>
     </div>
