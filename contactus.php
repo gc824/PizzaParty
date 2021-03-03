@@ -95,7 +95,7 @@ ini_set('display_errors', 1);
             <input type="text" name="full name" <?= ($fullname ? 'value="' . $fullname . '"' :  ''); ?> placeholder="Full Name"required><br/>
             <input type="email" name="mail" <?= ($email ? 'value="' . $email . '"' : ''); ?> placeholder="Your Email" required><br/>
             <input type="text" names="subject" <?=($subject ? 'value="' . $subject . '"' : ''); ?> placeholder="Subject" required></br/>
-            <textarea name="message" placeholder="Tell us about your experience! Better yet..dont." required><?= ($message ? $message : ''); ?></textarea><br/>
+            <textarea name="message" placeholder="Tell us about your experience! " required><?= ($message ? $message : ''); ?></textarea><br/>
             <input type="submit" name="submit-btn"></br>
         </form>
     </div>
