@@ -101,14 +101,14 @@ ini_set('display_errors', 1);
         }
         ?>
 
-        <h1> Connect with Us! </h1></br>
-        <p>Send E-mail</p><br />
-        <form class="contact-form" action="contactus.php" method="post" span class="form">
+        <h1> Connect with Us! </h1><br/>
+        <p>Send E-mail</p><br/>
+        <form class="contact-form" action="contactus.php" method="post">
             <input type="text" name="fullName" <?= ($fullName ? 'value="' . $fullName . '"' :  ''); ?> placeholder="Full Name" required><br/>
             <input type="email" name="email" <?= ($email ? 'value="' . $email . '"' : ''); ?> placeholder="Your Email" required><br/>
-            <input type="text" name="subject" <?= ($subject ? 'value="' . $subject . '"' : ''); ?> placeholder="Subject" required></br/>
-            <textarea name="message" placeholder="Tell us about your experience!" required><?= ($message ? $message : ''); ?></textarea><br/></span>
-            <input type="submit" name="submit-btn"></br>
+            <input type="text" name="subject" <?= ($subject ? 'value="' . $subject . '"' : ''); ?> placeholder="Subject" required><br/>
+            <textarea name="message" placeholder="Tell us about your experience!" required><?= ($message ? $message : ''); ?></textarea><br/>
+            <input type="submit" name="submit-btn"><br/>
         </form>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
