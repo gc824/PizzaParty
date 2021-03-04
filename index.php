@@ -17,7 +17,7 @@
 <body>
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 		<div class="container-fluid">
-			<a class="navbar-brand" href="#">PizzaParty</a>
+			<a class="navbar-brand" href="index.php">PizzaParty</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
 				data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false"
 				aria-label="Toggle navigation">
@@ -25,13 +25,13 @@
 			</button>
 			<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
 				<li class="nav-item active">
-					<a class="nav-link" href="ourstory.html">Our Story</a>
+					<a class="nav-link" href="ourstory.php">Our Story</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="contactus.php">Connect with Us!</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="recipes.html">Recipes</a>
+					<a class="nav-link" href="recipes.php">Recipes</a>
 				</li>
 			</ul>
 			<div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
@@ -53,7 +53,7 @@
 	<h1>Our Story</h1>
 	<p>The Pizza Party story is really the story about America, from Naples to New York City to Buffalo, NY. In 1938 at
 		the age of 12 and 15 Giovanni and Carlo Pardini left their home in Naples, Italy to achieve the American dream.
-		<br>
+		<br/>
 	<p>After a short stay at Ellis Island. Their name was shortened to <i>"Pardi"</i>, they lived in New York City until
 		leaving for Buffalo in 1950. The brothers opened <em>"Pizzeria di Pardi"</em> on Grant street in Buffalo's west
 		side. In 1986 we expanded to 8 locations in western NY and Pizzeria di Pardi became <b>Pizza Party! </b> Today
@@ -99,33 +99,35 @@
 		</div>
 		<hr>
 	</div>
+	<hr/>
+
 	<div>
 		<h3><b>Specialty Pizzas</b></h3>
-		<hr>
+		<hr/>
 
 		<h4><b>Flyers</b>$16.50</h4>
 		<p>Slices of pepperoni pizza are called flyers, because of the way they are often tossed around like
 			Frisbees
 			with Fresh mozzarella and Fresh Basil.</p>
-		<hr>
+		<hr/>
 
 		<h4><b>Grandma's Pizza</b>$12.50</h4>
 		<p>Grandma pizza is a distinct pizza that originates from Long Island, New York. It is a thin, square pizza
 			with
 			Cheese, Tomatoes, and Fresh Basil</p>
-		<hr>
+		<hr/>
 
 		<h4><b>Gmoney</b>$14.00</h4>
 		<p>Queens style pizza with Extra Cheese and side of Marinara sauce.</p>
-		<hr>
+		<hr/>
 
 		<h4><b>Becca</b>$25.00</h4>
 		<p>I love when it's Hot Bread in the oven</p>
-		<hr>
+		<hr/>
 
 		<h4><b>Chris</b>$20.00</h4>
 		<p>Pepperoni, Bacon & Peppers.</p>
-		<hr>
+		<hr/>
 
 		<h1>Recipe</h1>
 
