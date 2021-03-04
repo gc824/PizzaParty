@@ -63,7 +63,7 @@ ini_set('display_errors', 1);
         if (isset($_POST['submit-btn'])) {
 
             if (!empty(trim($_POST['fullName']))) {
-                $fullName = trim($_POST['fullName']);
+                $fullName = trim($_POST['fullName'])
             } else {
                 $errors['fullName'] = 'Enter your name!';
             }
@@ -71,19 +71,19 @@ ini_set('display_errors', 1);
             if (!empty(trim($_POST['subject']))) {
                 $subject = trim($_POST['subject']);
             } else {
-                $errors['subject'] = "<p>Subject cannot be blank</p>";
+                $errors['subject'] = "Subject cannot be blank";
             }
 
             if (!empty(trim($_POST['message']))) {
                 $message = trim($_POST['message']);
             } else {
-                $errors['message'] = "<p>Message cannot be blank</p>";
+                $errors['message'] = "Message cannot be blank";
             }
 
             if (!empty(trim($_POST['email']))) {
                 $email = trim($_POST['email']);
             } else {
-                $errors['email'] = 'GIVE US YOUR EMAIL';
+                $errors['email'] = "GIVE US YOUR EMAIL";
             }
 
             /* TODO
@@ -103,11 +103,11 @@ ini_set('display_errors', 1);
 
         <h1> Connect with Us! </h1></br>
         <p>Send E-mail</p><br />
-        <form class="contact-form" action="contactus.php" method="post">
-            <input type="text" name="fullName" <?= ($fullName ? 'value="' . $fullName . '"' :  ''); ?> placeholder="Full Name" required><span></span><br />
-            <input type="email" name="email" <?= ($email ? 'value="' . $email . '"' : ''); ?> placeholder="Your Email" required><br />
-            <input type="text" name="subject" <?= ($subject ? 'value="' . $subject . '"' : ''); ?> placeholder="Subject" required></br />
-            <textarea name="message" placeholder="Tell us about your experience! " required><?= ($message ? $message : ''); ?></textarea><br />
+        <form class="contact-form" action="contactus.php" method="post" span class="form">
+            <input type="text" name="fullName" <?= ($fullName ? 'value="' . $fullName . '"' :  ''); ?> placeholder="Full Name" required><br/>
+            <input type="email" name="email" <?= ($email ? 'value="' . $email . '"' : ''); ?> placeholder="Your Email" required><br/>
+            <input type="text" name="subject" <?= ($subject ? 'value="' . $subject . '"' : ''); ?> placeholder="Subject" required></br/>
+            <textarea name="message" placeholder="Tell us about your experience!" required><?= ($message ? $message : ''); ?></textarea><br/></span>
             <input type="submit" name="submit-btn"></br>
         </form>
     </div>
