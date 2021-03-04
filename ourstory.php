@@ -12,7 +12,7 @@
 <body>
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 		<div class="container-fluid">
-			<a class="navbar-brand" href="#">PizzaParty</a>
+			<a class="navbar-brand" href="index.php">PizzaParty</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
 				data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false"
 				aria-label="Toggle navigation">
@@ -20,13 +20,13 @@
 			</button>
 			<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
 				<li class="nav-item active">
-					<a class="nav-link" href="ourstory.html">Our Story</a>
+					<a class="nav-link" href="ourstory.php">Our Story</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="contactus.php">Connect with Us!</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="recipes.html">Recipes</a>
+					<a class="nav-link" href="recipes.php">Recipes</a>
 				</li>
 			</ul>
 			<div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
