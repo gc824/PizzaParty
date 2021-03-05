@@ -13,7 +13,7 @@ ini_set('display_errors', 1);
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">PizzaParty</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -63,7 +63,7 @@ ini_set('display_errors', 1);
         if (isset($_POST['submit-btn'])) {
 
             if (!empty(trim($_POST['fullName']))) {
-                $fullName = trim($_POST['fullName'])
+                $fullName = trim($_POST['fullName']);
             } else {
                 $errors['fullName'] = 'Enter your name!';
             }
@@ -99,16 +99,21 @@ ini_set('display_errors', 1);
             header("Location: contactus.php?mailsend");
         } */
         }
+        var_dump($errors);
         ?>
 
-        <h1> Connect with Us! </h1><br/>
-        <p>Send E-mail</p><br/>
+
+        <h1> Connect with Us! </h1><br />
+        <p>Send E-mail</p><br />
         <form class="contact-form" action="contactus.php" method="post">
-            <input type="text" name="fullName" <?= ($fullName ? 'value="' . $fullName . '"' :  ''); ?> placeholder="Full Name" required><br/>
-            <input type="email" name="email" <?= ($email ? 'value="' . $email . '"' : ''); ?> placeholder="Your Email" required><br/>
-            <input type="text" name="subject" <?= ($subject ? 'value="' . $subject . '"' : ''); ?> placeholder="Subject" required><br/>
-            <textarea name="message" placeholder="Tell us about your experience!" required><?= ($message ? $message : ''); ?></textarea><br/>
-            <input type="submit" name="submit-btn"><br/>
+            <input type="text" name="fullName" <?= ($fullName ? 'value="' . $fullName . '"' :  ''); ?> placeholder="Full Name" required>
+            <?= (isset($errors['fullName']) && !empty($errors['fullName']) ? '<span class="text-danger">' . $errors['fullName'] . '</span>' : ''); ?><br />
+            <input type="email" name="email" <?= ($email ? 'value="' . $email . '"' : ''); ?> placeholder="Your Email" required>
+            <?= (isset($errors['email']) && !empty($errors['email']) ? '<span class="text-danger">' . $errors['email'] . '</span>' : ''); ?><br />
+            <input type="text" name="subject" <?= ($subject ? 'value="' . $subject . '"' : ''); ?> placeholder="Subject" required><br />
+            <?= (isset($subject['email']) && !empty($errors['subject']) ? '<span class="text-danger">' . $errors['subject'] . '</span>' : ''); ?><br />
+            <textarea name="message" placeholder="Tell us about your experience!" required><?= ($message ? $message : ''); ?></textarea><br />
+            <input type="submit" name="submit-btn"><br />
         </form>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
