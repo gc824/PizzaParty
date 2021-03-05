@@ -63,7 +63,7 @@ ini_set('display_errors', 1);
         if (isset($_POST['submit-btn'])) {
 
             if (!empty(trim($_POST['fullName']))) {
-                $fullName = trim($_POST['fullName'])
+                $fullName = trim($_POST['fullName']);
             } else {
                 $errors['fullName'] = 'Enter your name!';
             }
@@ -105,9 +105,13 @@ ini_set('display_errors', 1);
         <p>Send E-mail</p><br/>
         <form class="contact-form" action="contactus.php" method="post">
             <input type="text" name="fullName" <?= ($fullName ? 'value="' . $fullName . '"' :  ''); ?> placeholder="Full Name" required><br/>
+            <?= (isset($errors['fullName']) && !empty($errors['fullName']) ? '<span class="text-danger">' . $errors['fullName'] . '</span>' : ''); ?><br />
             <input type="email" name="email" <?= ($email ? 'value="' . $email . '"' : ''); ?> placeholder="Your Email" required><br/>
+            <?= (isset($errors['email']) && !empty($errors['email']) ? '<span class="text-danger">' . $errors['email'] . '</span>' : ''); ?><br />
             <input type="text" name="subject" <?= ($subject ? 'value="' . $subject . '"' : ''); ?> placeholder="Subject" required><br/>
+            <?= (isset($errors['subject']) && !empty($errors['subject']) ? '<span class="text-danger">' . $errors['subject'] . '</span>' : ''); ?><br />
             <textarea name="message" placeholder="Tell us about your experience!" required><?= ($message ? $message : ''); ?></textarea><br/>
+            <?= (isset($errors['message']) && !empty($errors['message']) ? '<span class="text-danger">' . $errors['message'] . '</span>' : ''); ?><br />
             <input type="submit" name="submit-btn"><br/>
         </form>
     </div>
