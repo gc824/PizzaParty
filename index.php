@@ -60,41 +60,44 @@
 		we have three locations serving up the classic pizza & wings Buffalo is known for our original location as well
 		as our Hertel Avenue and UB locations.</p>
 
-	<h1>Menu</h1>
-	<h2>HOT out of the Oven</h2>
-	<table>
-		<thead>
-			<th>Fresh Baked Pizza</th>
-			<th>Personal-12"</th>
-			<th>Large-18"</th>
-		</thead>
-		<tbody>
-			<tr>
-				<td>Cheese</td>
-				<td>$12.00</td>
-				<td>$18.00</td>
-			</tr>
-			<tr>
-				<td>Cheese with One Topping</td>
-				<td>$14.00</td>
-				<td>$20.00</td>
-			</tr>
-			<tr>
-				<td>Extra Cheese</td>
-				<td>$3.00</td>
-				<td>$4.00</td>
-			</tr>
-			<tr>
-				<td>Beef it up</td>
-				<td>$4.00</td>
-				<td>$6.00</td>
-			</tr>
-		</tbody>
-	</table>
-
-	<div>
-		<p><b>Choice of Toppings:</b> Black Olives, Broccoli, Fresh Onions, Green Olives, Mushrooms, Italian Sausage,
-			Buffalo Chicken, Pepperoni, Ham.</p>
+	<div class="container-fluid">
+		<h1>Menu</h1>
+		<h2>HOT out of the Oven</h2>
+		<table>
+			<thead>
+				<th>Fresh Baked Pizza</th>
+				<th>Personal-12"</th>
+				<th>Large-18"</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Cheese</td>
+					<td>$12.00</td>
+					<td>$18.00</td>
+				</tr>
+				<tr>
+					<td>Cheese with One Topping</td>
+					<td>$14.00</td>
+					<td>$20.00</td>
+				</tr>
+				<tr>
+					<td>Extra Cheese</td>
+					<td>$3.00</td>
+					<td>$4.00</td>
+				</tr>
+				<tr>
+					<td>Beef it up</td>
+					<td>$4.00</td>
+					<td>$6.00</td>
+				</tr>
+			</tbody>
+		</table>
+		<div>
+			<p><b>Choice of Toppings:</b> Black Olives, Broccoli, Fresh Onions, Green Olives, Mushrooms, Italian
+				Sausage,
+				Buffalo Chicken, Pepperoni, Ham.</p>
+		</div>
+		<hr>
 	</div>
 	<hr/>
 
@@ -103,12 +106,14 @@
 		<hr/>
 
 		<h4><b>Flyers</b>$16.50</h4>
-		<p>Slices of pepperoni pizza are called flyers, because of the way they are often tossed around like Frisbees
+		<p>Slices of pepperoni pizza are called flyers, because of the way they are often tossed around like
+			Frisbees
 			with Fresh mozzarella and Fresh Basil.</p>
 		<hr/>
 
 		<h4><b>Grandma's Pizza</b>$12.50</h4>
-		<p>Grandma pizza is a distinct pizza that originates from Long Island, New York. It is a thin, square pizza with
+		<p>Grandma pizza is a distinct pizza that originates from Long Island, New York. It is a thin, square pizza
+			with
 			Cheese, Tomatoes, and Fresh Basil</p>
 		<hr/>
 
@@ -125,10 +130,12 @@
 		<hr/>
 
 		<h1>Recipe</h1>
-		
-		</div>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-			integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-			crossorigin="anonymous"></script>
+
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+		crossorigin="anonymous"></script>
 </body>
+
 </html>
