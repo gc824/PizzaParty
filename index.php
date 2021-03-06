@@ -59,10 +59,10 @@
 		as our Hertel Avenue and UB locations.</p>
 
 	<div class="row">
-		<div class="col-sm-3 pizzacard">
-			<img class="card-img-top" src="img/Pizza.jpg" alt="Pizza Pie">
-			<div class="card">
-				<div class="card-body">
+		<div class="col-sm-3">
+			<div class="card h-100">
+				<img class="card-img-top" src="img/Pizza.jpg" alt="Pizza Pie">
+				<div class="card-body h-100">
 					<h1 class="card-title"><b>HOT out of the Oven</b></h1>
 					<table>
 						<thead>
@@ -95,37 +95,43 @@
 					</table>
 					<p><b>Choice of Toppings:</b> Black Olives, Broccoli, Fresh Onions, Green Olives, Mushrooms, Italian Sausage,
 						Buffalo Chicken, Pepperoni, Ham.</p>
+				</div>
+				<div class="card-footer">
 					<a href="menu.php" class="btn btn-primary">Menu</a>
 				</div>
 			</div>
 		</div>
-		<div class="col-sm-3 pizzacard"> 
-			<img class="card-img-top" src="img/Pizza.jpg" alt="Pizza Pie">
-			<div class="card">
+		<div class="col-sm-3">
+			<div class="card h-100">
+				<img class="card-img-top" src="img/Pizza.jpg" alt="Pizza Pie">
 				<div class="card-body">
 					<h1><b>Specialty Pizzas</b></h1>
 					<h4 class="card-title"><b>Flyers</b> $16.50</h4>
 					<p>Slices of pepperoni pizza are called flyers, because of the way they are often tossed around like Frisbees
 						with Fresh mozzarella and Fresh Basil.</p>
+				</div>
+				<div class="card-footer">
 					<a href="menu.php" class="btn btn-primary">Menu</a>
 				</div>
 			</div>
 		</div>
-		<div class="col-sm-3 pizzacard">
-			<img class="card-img-top" src="img/Pizza.jpg" alt="Pizza Pie">
-			<div class="card">
+		<div class="col-sm-3">
+			<div class="card h-100">
+				<img class="card-img-top" src="img/Pizza.jpg" alt="Pizza Pie">
 				<div class="card-body">
 					<h1><b>Specialty Pizzas</b></h1>
 					<h4 class="card-title"><b>Grandma's Pizza</b> $12.50</h4>
 					<p>Grandma pizza is a distinct pizza that originates from Long Island, New York. It is a thin, square pizza with
 						Cheese, Tomatoes, and Fresh Basil</p>
+				</div>
+				<div class="card-footer">
 					<a href="menu.php" class="btn btn-primary">Menu</a>
 				</div>
 			</div>
 		</div>
-		<div class="col-sm-3 pizzacard">
-			<img class="card-img-top" src="img/Pizza.jpg" alt="Pizza Pie">
-			<div class="card">
+		<div class="col-sm-3">
+			<div class="card h-100">
+				<img class="card-img-top" src="img/Pizza.jpg" alt="Pizza Pie">
 				<div class="card-body">
 					<h1 class="card-title"><b>House Special</b></h1>
 					<h4><b>Becca</b>$25.00</h4>
@@ -137,8 +143,8 @@
 					<h4><b>Gagan</b>$14.00</h4>
 					<p>Thin crust with Extra Cheese and side of Marinara sauce.</p>
 					<hr />
-
-
+				</div>
+				<div class="card-footer">
 					<a href="menu.php" class="btn btn-primary">Menu</a>
 				</div>
 			</div>
