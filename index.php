@@ -59,7 +59,7 @@
 		as our Hertel Avenue and UB locations.</p>
 
 	<div class="row">
-		<div class="col-sm-3">
+		<div class="col-sm-3 pizzacard">
 			<img class="card-img-top" src="img/Pizza.jpg" alt="Pizza Pie">
 			<div class="card">
 				<div class="card-body">
@@ -99,7 +99,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-sm-3">
+		<div class="col-sm-3 pizzacard"> 
 			<img class="card-img-top" src="img/Pizza.jpg" alt="Pizza Pie">
 			<div class="card">
 				<div class="card-body">
@@ -111,7 +111,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-sm-3">
+		<div class="col-sm-3 pizzacard">
 			<img class="card-img-top" src="img/Pizza.jpg" alt="Pizza Pie">
 			<div class="card">
 				<div class="card-body">
@@ -123,7 +123,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-sm-3">
+		<div class="col-sm-3 pizzacard">
 			<img class="card-img-top" src="img/Pizza.jpg" alt="Pizza Pie">
 			<div class="card">
 				<div class="card-body">
