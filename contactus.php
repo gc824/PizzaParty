@@ -71,38 +71,23 @@ ini_set('display_errors', 1);
 			if (!empty(trim($_POST['subject']))) {
 				$subject = trim($_POST['subject']);
 			} else {
-				$errors['subject'] = "Subject cannot be blank";
+				$errors['subject'] = 'Subject cannot be blank';
 			}
 
 			if (!empty(trim($_POST['message']))) {
 				$message = trim($_POST['message']);
 			} else {
-				$errors['message'] = "Message cannot be blank";
+				$errors['message'] = 'Message cannot be blank';
 			}
 
 			if (!empty(trim($_POST['email']))) {
 				$email = trim($_POST['email']);
 			} else {
-				$errors['email'] = "GIVE US YOUR EMAIL";
+				$errors['email'] = 'GIVE US YOUR EMAIL';
 			}
-
-			/* TODO
-		if (isset($_POST['submit'])) {
-			$fullname = $_POST['name'];
-			$subject = $_POST['subject'];
-			$mailFrom = $_POST['mail'];
-			$message = $_POST['message'];
-			$mailTo = "gaganchhabra24@yahoo.com";
-			$headers = "From: " . $mailFrom;
-			$txt = "You have recieved an email from" . $fullname . ".\n\n" . $message;
-			mail($mailTo, $subject, $txt, $headers);
-			header("Location: contactus.php?mailsend");
-		} */
 		}
-	 
+
 		?>
-
-
 		<h1> Connect with Us! </h1><br />
 		<p>Send E-mail</p><br />
 		<form class="contact-form" action="contactus.php" method="post">
@@ -111,7 +96,7 @@ ini_set('display_errors', 1);
 			<input type="email" name="email" <?= ($email ? 'value="' . $email . '"' : ''); ?> placeholder="Your Email" required>
 			<?= (isset($errors['email']) && !empty($errors['email']) ? '<span class="text-danger">' . $errors['email'] . '</span>' : ''); ?><br />
 			<input type="text" name="subject" <?= ($subject ? 'value="' . $subject . '"' : ''); ?> placeholder="Subject" required><br />
-			<?= (isset($subject['email']) && !empty($errors['subject']) ? '<span class="text-danger">' . $errors['subject'] . '</span>' : ''); ?><br />
+			<?= (isset($errors['subject']) && !empty($errors['subject']) ? '<span class="text-danger">' . $errors['subject'] . '</span>' : ''); ?><br />
 			<textarea name="message" placeholder="Tell us about your experience!" required><?= ($message ? $message : ''); ?></textarea><br />
 			<input type="submit" name="submit-btn"><br />
 		</form>
